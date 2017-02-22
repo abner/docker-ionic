@@ -3,5 +3,5 @@ MAINTAINER abner <contato@abner.io>
 
 RUN npm config set cache /cache/.npm/
 
-RUN npm install -g "ionic@"2.2.1"
+RUN npm install -g "ionic@2.2.1"
 
