@@ -9,4 +9,4 @@ RUN npm install -g yarn@0.24.4
 
 RUN yarn config set cache-folder /cache/yarn
 
-RUN yarn global add "ionic@3.2.1" node-sass@4.5.3
+RUN yarn global add "ionic@3.1.2" node-sass@4.5.3
