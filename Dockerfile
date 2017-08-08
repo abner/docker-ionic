@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install  --no-install-recommends -y python gcc g++
     && npm i -g yarn@0.24.4 \
     && npm i -g node-sass@4.5.3 \
     && npm i -g ionic@3.1.2 \
-    && npm i -g npm@5.3.0 \
+    && yarn global add npm@5.3.0 \
     && apt-get -y remove python gcc g++ make \
     && rm -rf /var/lib/apt/lists/*
 #RUN apk add --no-cache --virtual .build-deps ca-certificates make gcc g++ git build-base \
