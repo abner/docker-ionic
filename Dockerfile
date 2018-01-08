@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install  --no-install-recommends -y python gcc g++
     && rm $(which yarn) \
     && npm i -g yarn@0.24.4 \
     && npm i -g node-sass@4.5.3 \
-    && npm i -g ionic@3.1.2 \
+    && npm i -g ionic@3.15.2 \
     && yarn global add npm@5.3.0 \
     && apt-get -y remove python gcc g++ make \
     && rm -rf /var/lib/apt/lists/*
