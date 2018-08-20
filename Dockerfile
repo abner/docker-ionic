@@ -1,16 +1,11 @@
-#FROM node:6.10.0-alpine
-FROM node:6.10.0
+FROM node:8.11.4
 
 MAINTAINER abner <contato@abner.io>
 
 RUN apt-get update && apt-get install  --no-install-recommends -y python gcc g++ make \
     && npm config set cache /cache/.npm/  \
-    && yarn config set cache-folder /cache/yarn  \
-    && rm $(which yarn) \
-    && npm i -g yarn@0.24.4 \
     && npm i -g node-sass@4.5.3 \
-    && npm i -g ionic@3.15.2 \
-    && yarn global add npm@5.3.0 \
+    && npm i -g ionic@4.1.0 \
     && apt-get -y remove python gcc g++ make \
     && rm -rf /var/lib/apt/lists/*
 #RUN apk add --no-cache --virtual .build-deps ca-certificates make gcc g++ git build-base \
