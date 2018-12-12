@@ -2,8 +2,6 @@ FROM node:8.11.4
 
 LABEL maintainer="abner<contato@abner.io>"
 
-ENV GIT_SSL_NO_VERIFY=1
-
 RUN apt-get update && apt-get install --no-install-recommends -y sudo python gcc g++ make \
     && npm config set cache /cache/.npm/  \
     && sudo npm i -g npm --unsafe-perm \
